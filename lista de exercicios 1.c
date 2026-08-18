@@ -14,7 +14,18 @@ primeiro = segundo;
 segundo = aux;
 
 printf ("%d \n %d", primeiro, segundo);
+//2
+double numero;
+printf("Coloque o numero: ");
+scanf("%lf", &numero);
+printf("notacao: %e", numero);
+//3
 
+
+
+
+
+	
 //exercicio 4
 float salario, vendas, total;
 printf("\nValor do salario:\n");
