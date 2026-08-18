@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
 int main(int argc, char *argv[]) {
-	
-	
+//exercicio 1	
 int primeiro, segundo, aux;
 printf("Insira o primeiro valor");
 scanf("%d", &primeiro);
@@ -18,10 +15,7 @@ segundo = aux;
 
 printf ("%d \n %d", primeiro, segundo);
 
-
-
-
-
+//exercicio 4
 float salario, vendas, total;
 printf("\nValor do salario:\n");
 scanf("%f", &salario);
