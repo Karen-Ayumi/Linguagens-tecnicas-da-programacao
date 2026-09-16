@@ -21,7 +21,7 @@ soma = multidigito(n1,10)+multidigito(n2,9)+multidigito(n3,8)+
 soma *=10;
 resto = soma % 11;
 if (resto == 10) resto = 0; 
-printf("\n%d", resto);
+
 
 
 soma = multidigito(n1,11)+multidigito(n2,10)+multidigito(n3,9)+
@@ -31,7 +31,14 @@ soma = multidigito(n1,11)+multidigito(n2,10)+multidigito(n3,9)+
 soma *=10;
 restoII = soma % 11;
 if (restoII == 10) resto = 0; 
-printf("\n%d", restoII);
+	
+	if (resto == n10 && restoII == n11){ 
+    printf("Seu cpf e valido");
+}
+else {
+    printf("Seu cpf nao e valido");
+}
+
 
 	
 	
