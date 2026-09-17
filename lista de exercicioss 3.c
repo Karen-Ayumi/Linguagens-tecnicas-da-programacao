@@ -9,7 +9,7 @@ int multidigito(int dig, int valor){
 
 int main(int argc, char *argv[]) {
 	
-
+//1
 int n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, soma, resto, restoII;
 printf("Escreva o seu cpf: ");
 scanf("%d %d %d . %d %d %d . %d %d %d - %d %d", &n1, &n2, &n3, &n4, &n5, &n6, &n7, &n8, &n9, &n10, &n11);
@@ -39,8 +39,44 @@ else {
     printf("Seu cpf nao e valido");
 }
 
+// 2
+float C, F, valor;
+char graus;
+printf("\nColoque o valor em graus: ");
+scanf("%f", &valor);
 
+printf("Esse valor esta em Celsius(C) ou em Fahrenheit (F)?:");
+scanf(" %c", &graus);
+
+if (graus == 'C'){
+    printf("A conversao de Celsius para Fahrenheit : %.2f", (valor * 9/5)+ 32);
+
+}
+else if (graus == 'F') {
+    printf("A conversao de Fahrenheit para Celsius: %.2f", (valor - 32) * 5/9);
+}
+
+//3
 	
+char nome[30];
+float nota1, nota2, nota3, media;
+
+printf("Nome : ");
+scanf("%s", nome);
+
+printf("Insira o valor das 3 notas: ");
+scanf("%f %f %f", &nota1, &nota2, &nota3);
+
+media = (nota1 + nota2 + nota3) / 3;
+
+if (media >= 7.0 && media <=10.0){
+    printf("Sua media: %.2f\nVOCE FOI APROVADO", media);
+}
+else if(media >=4.0 && media <= 6.9){
+    printf("Sua media: %.2f\nVOCE ESTA DE RECUPERACAO POR %f Pontos", media, (10.0 - media));
+}
+else printf("Sua media: %.2f\nVOCE ESTA REPROVADO", media);
+
 	
 	
 	
